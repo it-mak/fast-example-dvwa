@@ -7,7 +7,7 @@ services:
       context: ./.
       dockerfile: dvwa.Dockerfile
     networks:
-      main:
+      my_test:
         aliases:
           - dvwa
           
@@ -18,7 +18,7 @@ services:
     environment:
       http_proxy: http://Fast123:3128
     networks:
-      main:
+      my_test:
         aliases:
           - selenium
 
@@ -28,4 +28,5 @@ services:
       context: ./.
       dockerfile: test.Dockerfile
     networks:
-      main:
+      my_test:
+        - test_alias
