@@ -28,7 +28,7 @@ services:
     logging:
       driver: none
     environment:
-      http_proxy: http://fast:8080
+      http_proxy: http://Fast123:3128
     networks:
       main:
         aliases:
