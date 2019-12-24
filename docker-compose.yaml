@@ -29,6 +29,3 @@ services:
       dockerfile: test.Dockerfile
     networks:
       main:
-
-networks:
-  main:
